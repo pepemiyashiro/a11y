@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Accesibilidad JSConf 2017</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/jsconfco.svg" width="30" height="30" alt="">
+            Accesibilidad Web
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="nav navbar-nav ml-auto justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Navegación por teclado</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Lectores de pantalla</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./colors-semantic.html">Colores y HTML semántico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./links.html">Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="row" id="issues">
+        <div class="col-md-10 offset-md-1 offset-sm-0">
+            <h1>Lector de pantalla</h1>
+            <ul>
+                <li>El formulario no es fácil de entender si se usa un lector de pantalla.</li>
+                <li>La imagen no es comprensibles si se usa un lector de pantalla.</li>
+                <li>No es posible escuchar los cambios del contador</li>
+            </ul>
+            <p><b>Nota: </b>Para Windows y Linux puedes usar: <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn">Chrome Vox</a>, para Mac usa Voice Over (command + F5)</p>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-md-10 offset-md-1 offset-sm-0">
+            <h1 id="user">Crea un usuario</h1>
+            <img src="./assets/add-new-user-icon-32446.png">
+            <form>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    Acepto términos y condiciones
+                </div>
+                <button type="submit" class="btn btn-primary">Crear</button>
+                <button class="btn btn-danger">Cancelar</button>
+            </form>
+        </div>
+    </section>
+    <section class="row" style="padding-top:25px">
+        <div class="col-md-10 offset-md-1 offset-sm-0">
+            <h1 id="user">Tus puntos</h1>
+            <div class="card">
+                <div class="card-body" id="counter">
+                    0 puntos
+                </div>
+            </div>
+            <button class="btn btn-default" id="increment">Aumentar</button>
+            <button class="btn btn-default" id="decrement">Disminuir</button>
+        </div>
+    </section>
+    <script>
+        var count = 0;
+        var increment = document.getElementById('increment');
+        var decrement = document.getElementById('decrement');
+        var counter = document.getElementById('counter');
+
+        increment.addEventListener('click', add);
+        decrement.addEventListener('click', subtract);
+
+        function add() {
+            count = count + 1;
+            counter.innerHTML = count === 1 ? count + " punto" : count + " puntos";
+        }
+        function subtract() {
+            count = count - 1;
+            counter.innerHTML = count === 1 ? count + " punto" : count + " puntos";
+        }
+    </script>
+
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

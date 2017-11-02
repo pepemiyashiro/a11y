@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="273px" height="273px" viewBox="0 0 273 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>JsConf Iso</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="JS-Conf-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-Fixed" transform="translate(-188.000000, -35.000000)">
+            <g id="menu-fixed" transform="translate(188.000000, 35.000000)">
+                <g id="Logo-JsConf">
+                    <g id="JsConf-Iso">
+                        <polygon id="Cuerpo" fill="#EB3031" points="120.891194 190.054653 179.765981 81.517746 230.824553 90.015227 244.007943 105.822194"></polygon>
+                        <polygon id="Ala-derecha" fill="#E4DE58" points="199.503818 84.3274623 103.843346 19.3871155 64.3641807 42.4663345 126.096572 135.168349 199.503818 135.708241"></polygon>
+                        <polygon id="Sombra-ala-derecha" fill="#B8B33C" points="104.161116 19.3871155 0 79.8177844 50.2949921 20.1120135"></polygon>
+                        <polygon id="Ala-izquierda" fill="#E4DE58" points="241.086319 0.0149996623 230.667546 89.898871 199.563181 84.7501166 185.460237 74.9703921"></polygon>
+                        <polygon id="Sombra-ala-iz" fill="#B8B33C" points="241.157032 0.197096853 272.568558 49.5992501 237.083346 34.0159776"></polygon>
+                        <polygon id="Cabeza" fill="#910A0B" points="230.562363 90.073405 259.322313 94.1717554 259.322313 124.495883"></polygon>
+                        <polygon id="Cola" fill="#0730A3" points="121.726941 189.141258 75.10202 272.473121 163.516633 212.341487 155.752797 166.124871"></polygon>
+                        <polygon id="Pico" fill="#B8B33C" points="259.228175 124.267679 244.373727 127.219923 252.976803 116.663813"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
